@@ -15,16 +15,18 @@
   --background-color-light: #f5f4fa;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-color-dark);
   font-weight: 400;
   font-size: var(--main-text-size);
   letter-spacing: var(--main-text-letter-spacing);
-}
-
-* {
-  box-sizing: border-box;
 }
 
 /* COMMON */
@@ -35,6 +37,11 @@ p,
 ul {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 .section {
@@ -276,10 +283,6 @@ ul {
   flex-basis: calc((100% - 90px) / 3);
 }
 
-.services-section-list-img {
-  width: 100%;
-}
-
 /* TEAM */
 
 .team-section {
@@ -314,17 +317,12 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   margin: 0 auto;
-  padding: 0 0 30px;
-}
-
-.team-section-list-card-img {
-  margin-bottom: 30px;
-  width: 100%;
 }
 
 .team-section-list-card-text-container {
   font-size: var(--secondary-text-size);
   line-height: 1.19;
+  padding: 30px 0;
 }
 
 .team-section-list-card-title {
@@ -459,7 +457,6 @@ ul {
   background-color: var(--main-color-light);
   box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 0 20px;
   border: 1px solid #eeeeee;
 }
 
@@ -469,9 +466,8 @@ ul {
 
 .collection-list-card-text-container {
   text-align: left;
-  padding-left: 24px;
-  padding-top: 20px;
   margin: 0;
+  padding: 20px 0 20px 24px;
 }
 
 .collection-list-card-title {
