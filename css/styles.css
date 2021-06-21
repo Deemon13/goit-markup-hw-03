@@ -1,3 +1,5 @@
+/* VARIABLES */
+
 :root {
   --main-color-dark: #212121;
   --secondary-color: #757575;
@@ -15,11 +17,7 @@
   --background-color-light: #f5f4fa;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+/* COMMON */
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -28,8 +26,6 @@ body {
   font-size: var(--main-text-size);
   letter-spacing: var(--main-text-letter-spacing);
 }
-
-/* COMMON */
 
 h2,
 h3,
@@ -49,7 +45,8 @@ img {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
+  padding: 0 15px;
 }
 
 .list {
@@ -206,7 +203,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
   border-radius: 4px;
-  width: 200px;
+  min-width: 200px;
   padding: 8px 20px;
 }
 
@@ -423,6 +420,7 @@ img {
   background-color: var(--background-color-light);
   border: none;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .current-button {
