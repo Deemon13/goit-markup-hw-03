@@ -1,3 +1,3 @@
-Домашнее задание № 04 блока HTML+CSS курса Fullstack 2021 GoIt
+Домашнее задание № 03 блока HTML+CSS курса Fullstack 2021 GoIt
 
-# goit-markup-hw-04
+# goit-markup-hw-03
